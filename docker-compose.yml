@@ -1,0 +1,35 @@
+version: '3'
+volumes: 
+    data:
+services:
+    api:
+        build: ./api
+        ports:
+            - '3000:3000'
+        volumes:
+            - './api:/RailsReact'
+        tty: true
+        stdin_open: true
+        environment:
+            - 'DATABASE_PASSWORD=password' 
+        depends_on: 
+            - db
+        links:
+            - db
+    db:
+        image: mysql:5.7
+        ports:
+            - '3306:3306'
+        volumes:
+            - 'data:/var/lib/mysql'
+        environment:
+            MYSQL_ROOT_PASSWORD: password
+    front:
+        build: ./front
+        command: npm start
+        ports:
+            - '8000:3000'
+        volumes:
+            - ./front:/RailsReact
+        depends_on:
+            - api
