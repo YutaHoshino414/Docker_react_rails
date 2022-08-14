@@ -3,10 +3,12 @@
 # Docker+MySQL+Railsに、API モード + React を追加
 
 ## Front (React)
-<img width="1182" alt="スクリーンショット 2022-08-14" src="https://user-images.githubusercontent.com/72447845/184522506-23781ced-e141-4cc3-ad41-ab4e89b361a7.png">
+<img width="400" alt="スクリーンショット 2022-08-14" 
+src="https://user-images.githubusercontent.com/72447845/184522506-23781ced-e141-4cc3-ad41-ab4e89b361a7.png">
 
 ## Backend (Rails API v1)
-<img width="1182" alt="スクリーンショット 2022-08-14" src="https://user-images.githubusercontent.com/72447845/184522587-19c2b9bf-8361-4842-9527-6f905b64a26b.png">
+<img width="400" alt="スクリーンショット 2022-08-14" 
+src="https://user-images.githubusercontent.com/72447845/184522587-19c2b9bf-8361-4842-9527-6f905b64a26b.png">
 
 
 #### 便利なChrome拡張
