@@ -14,7 +14,7 @@ src="https://user-images.githubusercontent.com/72447845/184522587-19c2b9bf-8361-
 #### 便利なChrome拡張
 ブラウザ上のjsonを整形[JSONVue](https://kossy-web-engineer.hatenablog.com/entry/2018/09/13/061248)  
 
-<img width="500" alt="スクリーンショット 2022-08-14" 
+<img width="400" alt="スクリーンショット 2022-08-14" 
 src="https://user-images.githubusercontent.com/72447845/184522798-9938e133-cb87-4332-adf3-851e92131212.png">
 
 ### docker-compose exec front ash ??
