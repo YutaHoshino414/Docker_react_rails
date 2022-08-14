@@ -169,6 +169,8 @@ GEM
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2, < 3.0)
       websocket (~> 1.0)
+    semantic-ui-sass (2.4.4.0)
+      sassc
     semantic_range (3.0.0)
     spring (4.0.0)
     sprockets (4.1.1)
@@ -223,6 +225,7 @@ DEPENDENCIES
   rails (~> 6.1.6, >= 6.1.6.1)
   sass-rails (>= 6)
   selenium-webdriver (>= 4.0.0.rc1)
+  semantic-ui-sass
   spring
   turbolinks (~> 5)
   tzinfo-data
