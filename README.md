@@ -1,6 +1,7 @@
 # Docker+MySQL+Railsの開発環境 2
 
 ### Docker+MySQL+Railsに、API モード + React を追加
+### フロント側でデータの受け取り確認できたので、まずはバックエンド側から整えて行く。
 
 ## Front (React)
 <img width="500" alt="スクリーンショット 2022-08-14" 
