@@ -1,3 +1,4 @@
+<table class="ui table" style="width:500px">
 <%= form_with(model: product) do |form| %>
   <% if product.errors.any? %>
     <div id="error_explanation">
@@ -10,28 +11,54 @@
       </ul>
     </div>
   <% end %>
+  <tr>
+      <th> <%= form.label :Maker %></th>
+      <td>
+        <div class="ui fluid input">
+        <%= form.text_field :Maker %>
+        </div>
+      </td>
+  </tr>
+  <tr>
+    <th><%= form.label :Model %></th>
+    <td>
+      <div class="ui fluid input">
+      <%= form.text_field :Model %>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <th> <%= form.label :ModelCode %></th>
+    <td>
+      <div class="ui fluid input">
+      <%= form.text_field :ModelCode %>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <th><%= form.label :ProductType %></th>
+    <td>
+      <div class="ui input">
+      <%= form.text_field :ProductType %>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <th></th>
+    <td>
+      <div class="ui input"></div>
+    </td>
+</tr>
 
-  <div class="field">
-    <%= form.label :Maker %>
-    <%= form.text_field :Maker %>
-  </div>
-
-  <div class="field">
-    <%= form.label :Model %>
-    <%= form.text_field :Model %>
-  </div>
-
-  <div class="field">
-    <%= form.label :ModelCode %>
-    <%= form.text_field :ModelCode %>
-  </div>
-
-  <div class="field">
-    <%= form.label :ProductType %>
-    <%= form.text_field :ProductType %>
-  </div>
-
-  <div class="actions">
-    <%= form.submit %>
-  </div>
+  <tfoot class="full-width">
+    <tr>
+      <th>
+        <div class="actions">
+        <%= form.submit "登録", class:"ui primary button" %>
+        </div>
+      </th>
+      <th></th>
+    </tr>
+  </tfoot>
+</table>
 <% end %>

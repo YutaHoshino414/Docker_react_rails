@@ -2,7 +2,7 @@
 
 <h1>Products</h1>
 
-<table>
+<table class="ui table">
   <thead>
     <tr>
       <th>Maker</th>
@@ -20,14 +20,27 @@
         <td><%= product.Model %></td>
         <td><%= product.ModelCode %></td>
         <td><%= product.ProductType %></td>
-        <td><%= link_to 'Show', product %></td>
-        <td><%= link_to 'Edit', edit_product_path(product) %></td>
-        <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td>
+        <button class="ui primary button">
+            <%= link_to 'Show', product %>
+        </button>
+        </td>
+        <td>
+          <button class="ui teal button">
+            <%= link_to 'Edit', edit_product_path(product) %>
+          </button>
+        </td>
+        <td>
+          <button class="ui button">
+            <%= link_to 'Delete', product, method: :delete, data: { confirm: 'Are you sure?' } %>
+          </button>
+        </td>
       </tr>
     <% end %>
   </tbody>
 </table>
 
 <br>
-
-<%= link_to 'New Product', new_product_path %>
+<button class="ui large orange button">
+  <%= link_to 'New Product', new_product_path %>
+</button>

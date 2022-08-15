@@ -3,7 +3,8 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  width: 100px;;
+  height: 100px;
   pointer-events: none;
 }
 
@@ -15,9 +16,9 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
@@ -35,4 +36,23 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.card_wrapper{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
+  padding: 10px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.card{
+    width: 250px;
+    height: 200px;
+    background-color: rgb(241, 241, 241);
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px;
 }
